@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "registry": "https://github.com/ykncode/packages",
+  "packages": [
+    {
+      "name": "sayac",
+      "version": "0.1.0",
+      "description": "Stateful counter utility package",
+      "path": "sayac"
+    },
+    {
+      "name": "math",
+      "version": "1.0.0",
+      "description": "Standard arithmetic, clamp, power, and numeric algorithms",
+      "path": "math"
+    },
+    {
+      "name": "net/http",
+      "version": "1.0.0",
+      "description": "HTTP request, response, and status code models",
+      "path": "net/http"
+    },
+    {
+      "name": "crypto/sha256",
+      "version": "1.0.0",
+      "description": "SHA-256 cryptographic hashing primitive",
+      "path": "crypto/sha256"
+    },
+    {
+      "name": "data/json",
+      "version": "1.0.0",
+      "description": "Lightweight JSON parser and serializer",
+      "path": "data/json"
+    },
+    {
+      "name": "terminal/colors",
+      "version": "1.0.0",
+      "description": "ANSI escape sequence color formatter for CLI",
+      "path": "terminal/colors"
+    }
+  ]
+}

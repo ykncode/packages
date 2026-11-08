@@ -1,0 +1,5 @@
+[package]
+name = "crypto/sha256"
+version = "1.0.0"
+main = "mod.ykn"
+description = "SHA-256 cryptographic hashing primitive"

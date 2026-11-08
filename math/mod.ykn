@@ -1,0 +1,38 @@
+# math paketi - Matematik yardımcı fonksiyonları
+
+isv mutlak(x: tamsayi) -> tamsayi {
+    eger x < 0 ise {
+        dondu 0 - x;
+    }
+    dondu x;
+}
+
+isv en_buyuk(a: tamsayi, b: tamsayi) -> tamsayi {
+    eger a > b ise {
+        dondu a;
+    }
+    dondu b;
+}
+
+isv en_kucuk(a: tamsayi, b: tamsayi) -> tamsayi {
+    eger a < b ise {
+        dondu a;
+    }
+    dondu b;
+}
+
+isv sinirla(deger: tamsayi, alt: tamsayi, ust: tamsayi) -> tamsayi {
+    eger deger < alt ise { dondu alt; }
+    eger deger > ust ise { dondu ust; }
+    dondu deger;
+}
+
+isv us_al(taban: tamsayi, us: tamsayi) -> tamsayi {
+    degisken sonuc: tamsayi = 1;
+    degisken i: tamsayi = 0;
+    dongu i < us {
+        sonuc = sonuc * taban;
+        i = i + 1;
+    }
+    dondu sonuc;
+}

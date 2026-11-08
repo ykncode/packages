@@ -1,0 +1,20 @@
+# crypto/sha256 paketi - SHA-256 kriptografik özetleme
+
+yapi Sha256Durum {
+    durum: [8]u32;
+    sayac: [2]u32;
+    tampon: [64]u8;
+}
+
+isv sha256_ilklendir(ctx: *Sha256Durum) {
+    ctx.durum[0] = 0x6a09e667;
+    ctx.durum[1] = 0xbb67ae85;
+    ctx.durum[2] = 0x3c6ef372;
+    ctx.durum[3] = 0xa54ff53a;
+    ctx.durum[4] = 0x510e527f;
+    ctx.durum[5] = 0x9b05688c;
+    ctx.durum[6] = 0x1f83d9ab;
+    ctx.durum[7] = 0x5be0cd19;
+    ctx.sayac[0] = 0;
+    ctx.sayac[1] = 0;
+}

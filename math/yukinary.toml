@@ -1,0 +1,5 @@
+[package]
+name = "math"
+version = "1.0.0"
+main = "mod.ykn"
+description = "Standard numeric arithmetic and power functions"

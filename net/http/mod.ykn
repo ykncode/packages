@@ -1,0 +1,31 @@
+# net/http paketi - HTTP modelleri ve durum kodları
+
+degisken HTTP_STATUS_OK: tamsayi = 200;
+degisken HTTP_STATUS_CREATED: tamsayi = 201;
+degisken HTTP_STATUS_BAD_REQUEST: tamsayi = 400;
+degisken HTTP_STATUS_UNAUTHORIZED: tamsayi = 401;
+degisken HTTP_STATUS_NOT_FOUND: tamsayi = 404;
+degisken HTTP_STATUS_INTERNAL_ERROR: tamsayi = 500;
+
+yapi HttpRequest {
+    metot: *u8;
+    yol: *u8;
+    govde: *u8;
+    govde_uzunluk: tamsayi;
+}
+
+yapi HttpResponse {
+    durum_kodu: tamsayi;
+    icerik_tipi: *u8;
+    govde: *u8;
+    govde_uzunluk: tamsayi;
+}
+
+isv http_yanit_olustur(kod: tamsayi, govde: *u8, uzunluk: tamsayi) -> HttpResponse {
+    degisken r: HttpResponse;
+    r.durum_kodu = kod;
+    r.icerik_tipi = "text/plain".ptr;
+    r.govde = govde;
+    r.govde_uzunluk = uzunluk;
+    dondu r;
+}

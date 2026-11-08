@@ -1,0 +1,5 @@
+[package]
+name = "terminal/colors"
+version = "1.0.0"
+main = "mod.ykn"
+description = "ANSI 256-color terminal text formatting"

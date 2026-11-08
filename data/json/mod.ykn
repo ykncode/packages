@@ -1,0 +1,30 @@
+# data/json paketi - Hafif JSON ayrıştırıcı
+
+degisken JSON_TIP_BOS: tamsayi = 0;
+degisken JSON_TIP_SAYI: tamsayi = 1;
+degisken JSON_TIP_METIN: tamsayi = 2;
+degisken JSON_TIP_MANTIKSAL: tamsayi = 3;
+degisken JSON_TIP_DIZI: tamsayi = 4;
+degisken JSON_TIP_NESNE: tamsayi = 5;
+
+yapi JsonDeger {
+    tip: tamsayi;
+    sayi_deger: tamsayi;
+    metin_deger: *u8;
+}
+
+isv json_sayi_olustur(v: tamsayi) -> JsonDeger {
+    degisken j: JsonDeger;
+    j.tip = JSON_TIP_SAYI;
+    j.sayi_deger = v;
+    j.metin_deger = 0;
+    dondu j;
+}
+
+isv json_metin_olustur(s: *u8) -> JsonDeger {
+    degisken j: JsonDeger;
+    j.tip = JSON_TIP_METIN;
+    j.sayi_deger = 0;
+    j.metin_deger = s;
+    dondu j;
+}

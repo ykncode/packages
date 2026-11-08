@@ -1,0 +1,5 @@
+[package]
+name = "sayac"
+version = "0.1.0"
+main = "mod.ykn"
+description = "Stateful counter utility"

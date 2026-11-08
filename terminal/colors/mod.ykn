@@ -1,0 +1,15 @@
+# terminal/colors paketi - ANSI Terminal Renkleri
+
+degisken ANSI_SIFIRLA: *u8 = "\x1b[0m".ptr;
+degisken ANSI_KALIN: *u8   = "\x1b[1m".ptr;
+degisken ANSI_KIRMIZI: *u8 = "\x1b[31m".ptr;
+degisken ANSI_YESIL: *u8   = "\x1b[32m".ptr;
+degisken ANSI_SARI: *u8    = "\x1b[33m".ptr;
+degisken ANSI_MAVI: *u8    = "\x1b[34m".ptr;
+degisken ANSI_CYAN: *u8    = "\x1b[36m".ptr;
+
+isv renkli_yaz(renk_kodu: *u8, metin: *u8) {
+    ekrana_yaz(renk_kodu);
+    ekrana_yaz(metin);
+    ekrana_yaz(ANSI_SIFIRLA);
+}

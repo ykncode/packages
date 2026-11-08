@@ -1,0 +1,20 @@
+# sayac paketi - Sayaç modülü
+degisken g_sayac_degeri: tamsayi = 0;
+
+isv sayac_arttir() -> tamsayi {
+    g_sayac_degeri = g_sayac_degeri + 1;
+    dondu g_sayac_degeri;
+}
+
+isv sayac_azalt() -> tamsayi {
+    g_sayac_degeri = g_sayac_degeri - 1;
+    dondu g_sayac_degeri;
+}
+
+isv sayac_deger() -> tamsayi {
+    dondu g_sayac_degeri;
+}
+
+isv sayac_sifirla() {
+    g_sayac_degeri = 0;
+}
